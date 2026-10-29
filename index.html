@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#091321">
+<meta name="description" content="SIMH — a collection of historically significant computer and hardware simulators. Explore supported systems, build guidance, documentation and source code.">
+<title>SIMH — Historical Computer Simulation</title>
+<style>
+:root{color-scheme:dark;--bg:#07111e;--panel:#0d1b2b;--panel2:#102338;--line:#20364b;--text:#edf4fb;--muted:#a6b8ca;--cyan:#79e2db;--blue:#72a8ff;--gold:#f0c878}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 75% -10%,#16395a 0,transparent 45%),var(--bg);font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--text);line-height:1.6}a{color:var(--cyan);text-decoration:none}a:hover{text-decoration:underline}a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offset:3px}.wrap{width:min(1120px,calc(100% - 36px));margin:auto}.top{display:flex;align-items:center;justify-content:space-between;padding:20px 0;border-bottom:1px solid #294057}.brand{display:flex;gap:12px;align-items:center;font-size:1.08rem;font-weight:800;letter-spacing:.08em}.mark{display:grid;place-items:center;width:40px;height:40px;border:1px solid #4b8f9b;border-radius:10px;background:#102e40;color:var(--cyan);font-family:ui-monospace,monospace;font-weight:900}.nav{display:flex;gap:22px;flex-wrap:wrap;font-size:.92rem}.hero{padding:78px 0 60px;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}.eyebrow{color:var(--cyan);font-size:.78rem;text-transform:uppercase;letter-spacing:.18em;font-weight:800}.hero h1{font-size:clamp(2.6rem,6vw,5rem);line-height:1.03;letter-spacing:-.055em;margin:16px 0 20px}.hero h1 span{color:var(--cyan)}.lead{font-size:1.12rem;max-width:650px;color:var(--muted)}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:9px;padding:12px 17px;font-weight:750;border:1px solid #3d5b76;background:#132a3f;color:var(--text)}.btn.primary{background:var(--cyan);color:#05202b;border-color:var(--cyan)}.btn:hover{text-decoration:none;filter:brightness(1.08)}.console{border:1px solid #294a63;border-radius:14px;background:linear-gradient(145deg,#102439,#08111d);padding:20px;box-shadow:0 24px 70px #0006}.consolehead{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:12px;margin-bottom:16px;color:var(--muted);font-size:.8rem}.dots{display:flex;gap:5px}.dots i{width:7px;height:7px;border-radius:100%;background:#52778a}.terminal{font: .86rem/1.9 ui-monospace,SFMono-Regular,Menlo,monospace;color:#b9cddd;white-space:pre-wrap}.terminal strong{color:var(--cyan);font-weight:600}.terminal .gold{color:var(--gold)}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:12px 0 45px}.stat{border:1px solid var(--line);background:#0b1928ad;border-radius:10px;padding:15px 18px}.stat b{display:block;font-size:1.25rem;color:var(--cyan)}.stat span{font-size:.84rem;color:var(--muted)}section{padding:36px 0}.sectionhead{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:22px}.sectionhead h2{margin:5px 0;font-size:clamp(1.7rem,3vw,2.3rem);letter-spacing:-.03em}.sectionhead p{margin:0;max-width:520px;color:var(--muted)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{padding:20px;border:1px solid var(--line);background:linear-gradient(160deg,#102236,#0a1725);border-radius:12px;min-height:180px}.card .symbol{font:700 1.15rem ui-monospace,monospace;color:var(--gold)}.card h3{margin:10px 0 7px;font-size:1.06rem}.card p{color:var(--muted);margin:0;font-size:.93rem}.steps{counter-reset:step;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.step{border-top:2px solid #4e8995;padding:16px 0}.step b{display:block;font-size:1.02rem;margin-bottom:5px}.step p{margin:0;color:var(--muted);font-size:.93rem}.step code{background:#14283b;padding:2px 5px;border-radius:4px;color:#cce7f3}.callout{margin:32px 0;border:1px solid #3b596b;border-radius:12px;background:#102337;padding:24px;display:flex;align-items:center;justify-content:space-between;gap:22px}.callout p{color:var(--muted);margin:5px 0 0}.links{display:flex;gap:12px;flex-wrap:wrap}.links a{border-bottom:1px solid #42677c;padding:6px 0}footer{border-top:1px solid var(--line);padding:25px 0 35px;color:var(--muted);font-size:.85rem}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.note{font-size:.83rem;color:var(--muted);margin-top:12px}
+@media(max-width:760px){.hero{grid-template-columns:1fr;padding:48px 0 35px;gap:28px}.nav{gap:12px}.top{align-items:flex-start}.cards,.steps{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.sectionhead{display:block}.sectionhead p{margin-top:8px}.callout{align-items:flex-start;flex-direction:column}.hero h1{font-size:clamp(2.7rem,14vw,4.2rem)}}@media(max-width:420px){.wrap{width:calc(100% - 26px)}.nav{font-size:.83rem}.brand{font-size:.95rem}.stats{grid-template-columns:1fr}.btn{width:100%}}
+</style>
+</head>
+<body>
+<header class="wrap top">
+<a class="brand" href="#" aria-label="SIMH home"><span class="mark">S/</span><span>SIMH <span style="color:var(--muted);font-weight:500">SIMULATORS</span></span></a>
+<nav class="nav" aria-label="Main navigation"><a href="#systems">Systems</a><a href="#getting-started">Getting started</a><a href="#resources">Resources</a></nav>
+</header>
+<main>
+<div class="wrap">
+<section class="hero" aria-labelledby="hero-title">
+<div><div class="eyebrow">Explore the history of computing</div><h1 id="hero-title">Bring classic computers <span>back to life.</span></h1><p class="lead">SIMH is a collection of simulators for historically significant computers and hardware. Recreate the behavior of earlier systems, explore their architecture, and experiment with the software built for them.</p><div class="actions"><a class="btn primary" href="https://github.com/ArkansasIo/simh">Browse source on GitHub ↗</a><a class="btn" href="https://github.com/ArkansasIo/simh/blob/master/README.md">Read build documentation</a></div></div>
+<div class="console" aria-label="Illustrative terminal panel"><div class="consolehead"><span>SIMULATOR CONSOLE · EXAMPLE</span><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div><div class="terminal"><strong>SIMH</strong>  |  SYSTEM EMULATION
+--------------------------------
+$ <strong>make</strong>
+Build tools and dependencies
+depend on your host platform.
+
+$ <strong>./BIN/pdp11</strong>
+PDP-11 simulator
+sim&gt; <span class="gold">HELP</span>
+sim&gt; <span class="gold">SHOW CONFIGURATION</span>
+
+<span style="color:#7d9aab">Illustrative commands only.
+See each simulator's documentation.</span></div></div>
+</section>
+<div class="stats" aria-label="Project highlights"><div class="stat"><b>Multi-system</b><span>Many historical architectures</span></div><div class="stat"><b>Open source</b><span>Build and inspect the code</span></div><div class="stat"><b>Cross-platform</b><span>Host support varies by simulator</span></div></div>
+<section id="systems"><div class="sectionhead"><div><div class="eyebrow">Explore the collection</div><h2>Systems worth rediscovering</h2></div><p>These are examples represented in the repository. Support, build steps and required media differ by simulator.</p></div>
+<div class="cards">
+<article class="card"><div class="symbol">PDP / VAX</div><h3>DEC minicomputers</h3><p>Explore PDP-1, PDP-8, PDP-10, PDP-11 and VAX-family simulation sources and their peripheral models.</p><p style="margin-top:12px"><a href="https://github.com/ArkansasIo/simh/tree/master/PDP11">PDP-11 source ↗</a></p></article>
+<article class="card"><div class="symbol">IBM</div><h3>Classic business systems</h3><p>Browse implementations for historic IBM systems alongside their related source, configuration and documentation.</p><p style="margin-top:12px"><a href="https://github.com/ArkansasIo/simh/tree/master/I1401">IBM 1401 source ↗</a></p></article>
+<article class="card"><div class="symbol">ALT / HP</div><h3>Early microcomputers and more</h3><p>Inspect Altair-related projects, HP systems and a wider collection of historically important architectures.</p><p style="margin-top:12px"><a href="https://github.com/ArkansasIo/simh/tree/master/AltairZ80">Altair Z80 source ↗</a></p></article>
+</div></section>
+<section id="getting-started"><div class="sectionhead"><div><div class="eyebrow">Start exploring</div><h2>From source to simulator</h2></div><p>Use the repository's own instructions for the exact host, simulator and dependencies you need.</p></div>
+<div class="steps"><div class="step"><b>01 · Get the source</b><p>Clone the repository and review its README and license before building.</p><p style="margin-top:12px"><code>git clone https://github.com/ArkansasIo/simh.git</code></p></div><div class="step"><b>02 · Prepare your host</b><p>Install a supported compiler and the dependencies described by the project's build documentation for your OS.</p></div><div class="step"><b>03 · Build and read the docs</b><p>Use the documented make targets and simulator-specific instructions. Required historical ROMs or disk images may need to be sourced separately.</p></div></div>
+<div class="callout"><div><strong>Need a particular machine?</strong><p>Open the source tree and find the simulator directory and its local documentation.</p></div><a class="btn primary" href="https://github.com/ArkansasIo/simh/tree/master">Explore repository ↗</a></div>
+</section>
+<section id="resources"><div class="sectionhead"><div><div class="eyebrow">Project resources</div><h2>Go deeper</h2></div><p>Use the maintained repository content as the source of truth for current build details and simulator behavior.</p></div>
+<div class="links"><a href="https://github.com/ArkansasIo/simh/blob/master/README.md">README & build notes ↗</a><a href="https://github.com/ArkansasIo/simh/blob/master/LICENSE.txt">License ↗</a><a href="https://github.com/ArkansasIo/simh/issues">Issues & bug reports ↗</a><a href="https://github.com/ArkansasIo/simh/commits/master">Commit history ↗</a><a href="https://github.com/simh/simh">Upstream SIMH project ↗</a></div>
+<p class="note">This site is an informational landing page for the repository, not a simulator running in the browser. Machine software, firmware and disk images are not bundled here; their availability and redistribution terms vary.</p>
+</section>
+</div>
+</main>
+<footer><div class="wrap foot"><span>SIMH · Historical computer simulation</span><span>Published from <a href="https://github.com/ArkansasIo/simh">ArkansasIo/simh</a></span></div></footer>
+</body>
+</html>
